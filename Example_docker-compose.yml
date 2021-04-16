@@ -1,4 +1,4 @@
-# fill THESE
+# fill THESE & rename to docker-compose.yml
 version: "2"
 services:
   practice_docker: 
