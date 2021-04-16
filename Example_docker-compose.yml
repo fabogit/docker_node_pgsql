@@ -1,4 +1,6 @@
-version: "2"services:
+# fill THESE
+version: "2"
+services:
   practice_docker: 
     image: DOCKER_HUB_USERNAME/CONTAINER_NAME
     ports: 
