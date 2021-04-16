@@ -1,0 +1,20 @@
+version: "2"services:
+  practice_docker: 
+    image: DOCKER_HUB_USERNAME/CONTAINER_NAME
+    ports: 
+      - CONTAINER_PORT:SERVER_PORT
+    # wait db then start
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; npm start'
+    depends_on:
+      - db
+    # set server env
+    environment:
+      - DATABASE_URL=postgres://POSTGRES_USER:POSTGRES_PASSWORD@db:POSTGRES_PORT/POSTGRES_DB
+      - PORT=SERVER_PORT   
+  db:
+    # mirror db env from server 
+    image: postgres
+    environment:
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=
