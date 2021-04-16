@@ -1,5 +1,5 @@
 {
-  "name": "docker_node_pgsql",
+  "name": "practice_docker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
