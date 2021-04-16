@@ -1,0 +1,27 @@
+{
+  "name": "docker_node_pgsql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabogit/docker_node_pgsql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabogit/docker_node_pgsql/issues"
+  },
+  "homepage": "https://github.com/fabogit/docker_node_pgsql#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0"
+  }
+}
